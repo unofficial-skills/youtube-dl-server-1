@@ -5,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(['youtube-dl-server.py'],
-             pathex=['C:\\Users\\andrew\\alpha-video'],
+             pathex=['C:\\Users\\andrew\\youtube-dl-server'],
              binaries=[],
              datas=[('*', '.')],
              hiddenimports=[],
@@ -35,4 +35,4 @@ coll = COLLECT(exe,
                strip=False,
                upx=True,
                upx_exclude=[],
-               name='alpha-video')
+               name='youtube-dl-server')
