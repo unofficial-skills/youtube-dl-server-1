@@ -16,6 +16,8 @@ jobs:
 
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-windows@main
+      with:
+        path: /
         
     - uses: papeloto/action-zip@v1
       with:
