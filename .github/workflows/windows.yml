@@ -21,13 +21,9 @@ jobs:
       with:
         path: files
         
-    - uses: papeloto/action-zip@v1
-      with:
-        files: files/dist/windows/
-        dest: video.zip
           
     - uses: actions/upload-artifact@v2
       with:
         name: alpha
-        path: video.zip
+        path: files/dist/windows/
   
