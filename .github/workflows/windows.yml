@@ -13,11 +13,13 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        path: files
 
     - name: Package Application
       uses: JackMcKew/pyinstaller-action-windows@main
       with:
-        path: $GITHUB_WORKSPACE
+        path: files
         
     - uses: papeloto/action-zip@v1
       with:
