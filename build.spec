@@ -4,7 +4,7 @@
 block_cipher = None
 
 
-a = Analysis(['windows-alpha-video.py'],
+a = Analysis(['youtube-dl-server.py'],
              pathex=['C:\\Users\\andrew\\alpha-video'],
              binaries=[],
              datas=[('*', '.')],
