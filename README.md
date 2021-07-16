@@ -2,7 +2,7 @@
 ![Docker Pulls Shield](https://img.shields.io/docker/pulls/nbr23/youtube-dl-server.svg?style=flat-square)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://raw.githubusercontent.com/nbr23/youtube-dl-server/master/LICENSE)
 
-# youtube-dl-server!
+# youtube-dl-server
 
 Simple Web and REST interface for downloading youtube videos onto a server.
 [`starlette`](https://www.starlette.io/) +
