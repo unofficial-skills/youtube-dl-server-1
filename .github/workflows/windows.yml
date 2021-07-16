@@ -17,7 +17,7 @@ jobs:
         path: files
 
     - name: Package Application
-      uses: JackMcKew/pyinstaller-action-windows@main
+      uses: andrewstech/youtube-dl-server-winbuilder@main
       with:
         path: files
         
