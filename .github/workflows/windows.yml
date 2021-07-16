@@ -24,6 +24,6 @@ jobs:
           
     - uses: actions/upload-artifact@v2
       with:
-        name: alpha
+        name: youtube-dl-server
         path: files/dist/windows/
   
