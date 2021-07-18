@@ -6,6 +6,7 @@ from starlette.templating import Jinja2Templates
 from starlette.middleware import Middleware
 from starlette.middleware.cors import CORSMiddleware
 import uvicorn
+import sys
 
 from ydl_server.logdb import JobsDB, Job, Actions, JobType
 
@@ -14,6 +15,11 @@ from ydl_server.jobshandler import JobsHandler
 from ydl_server.config import app_config
 
 from ydl_server.routes import routes
+
+if getattr(sys, 'frozen', False):
+    os.environ['YOUTUBE_DL'] = os.path.join(os.path.split(__file__)[0], 'share')
+else :
+    pass
 
 
 if __name__ == "__main__":
